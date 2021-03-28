@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кэт энерджи - Подбор программы</title>
 </head>
-<body>
+<body class="page-body">
   <header class="page-header">
     <div class="container">
       <a class="page-header__logo" href="index.html">
@@ -25,66 +25,68 @@
   <main class="main-page">
     <h1 class="main-page__title page-title">Подбор программы</h1>
     <section class="questionary-block">
-      <h2 class="visually-hidden">анкета</h2>
-      <p class="questionary-block__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <form class="questionary-block__form questionary" action="https://echo.htmlacademy.ru" method="GET">
-        <fieldset class="questionary__part">
-          <legend class="questionary__legend visually-hidden">основные данные кота</legend>
-          <label class="questionary__label" for="cat-name">имя:*</label>
-          <input class="questionary__input" type="text" id="cat-name" name="cat-name" required placeholder="барсик">
-          <label class="questionary__label" for="cat-weight">Вес (кг):*</label>
-          <input class="questionary__input" type="number" id="cat-weight" name="cat-weight" required placeholder="7">
-          <label class="questionary__label" for="cat-age">Возраст (лет):</label>
-          <input class="questionary__input" type="number" id="cat-age" name="cat-age" placeholder="7">
-        </fieldset>
-        <fieldset class="questionary__part">
-          <legend class="questionary__legend visually-hidden">желаемая программа</legend>
-          <input class="questionary__radio" type="radio" id="lose" name="program-type" value="lose">
-          <label class="questionary__label" for="lose" >похудение</label>
-          <input class="questionary__radio" type="radio" id="gain" name="program-type" value="gain">
-          <label class="questionary__label" for="gain" >Набор массы</label>
-          <input class="questionary__radio" type="radio" id="unknown" name="program-type" value="unknown">
-          <label class="questionary__label" for="unknown" >Не знаю (Нужен ваш совет)</label>
-        </fieldset>
-        <fieldset class="questionary__part">
-          <legend class="questionary__legend">Контактные данные (владельца кота)</legend>
-          <label class="questionary__label" for="owner-email">E-mail:*</label>
-          <input class="questionary__input" type="email" id="owner-email" name="owner-email" required placeholder="kuklachev@gmail.com">
-          <label class="questionary__label" for="owner-phone">Телефон:*</label>
-          <input class="questionary__input" type="tel" id="owner-phone" name="owner-phone" required placeholder="8 (960) 900-60-90">
-        </fieldset>
-        <fieldset class="questionary__part">
-          <legend class="questionary__legend">Комментарий</legend>
-          <label for="cat-about" class="questionary__label visually-hidden">комментарий</label>
-          <textarea class="questionary__textarea" name="cat-about" id="cat-about" placeholder="Расскажите обо всех повАдках кота"></textarea>
-        </fieldset>
-        <fieldset class="questionary__part">
-          <legend class="questionary__legend">Дополнительно</legend>
-          <ul class="questionary__list">
-            <li class="questionary__item">
-              <input class="questionary__checkbox" type="checkbox" id="add-sweetener" name="add-sweetener">
-              <label class="questionary__label" for="add-sweetener">сахарозаменитель</label>
-            </li>
-            <li class="questionary__item">
-              <input class="questionary__checkbox" type="checkbox" id="add-water" name="add-water">
-              <label class="questionary__label" for="add-water">питьевая вода</label>
-            </li>
-            <li class="questionary__item">
-              <input class="questionary__checkbox" type="checkbox" id="add-milk" name="add-milk">
-              <label class="questionary__label" for="add-milk">молоко</label>
-            </li>
-            <li class="questionary__item">
-              <input class="questionary__checkbox" type="checkbox" id="add-vitamin" name="add-vitamin">
-              <label class="questionary__label" for="add-vitamin">витамины</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button class="questionary__submit button" type="submit">отправить заявку</button>
-      </form>
-      <p class="questionary-block__footnote">* — Обязательные поля</p>
+      <div class="container">
+        <h2 class="visually-hidden">анкета</h2>
+        <p class="questionary-block__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="questionary-block__form questionary" action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset class="questionary__part">
+            <legend class="questionary__legend visually-hidden">основные данные кота</legend>
+            <label class="questionary__label" for="cat-name">имя:*</label>
+            <input class="questionary__input" type="text" id="cat-name" name="cat-name" required placeholder="барсик">
+            <label class="questionary__label" for="cat-weight">Вес (кг):*</label>
+            <input class="questionary__input" type="number" id="cat-weight" name="cat-weight" required placeholder="7">
+            <label class="questionary__label" for="cat-age">Возраст (лет):</label>
+            <input class="questionary__input" type="number" id="cat-age" name="cat-age" placeholder="7">
+          </fieldset>
+          <fieldset class="questionary__part">
+            <legend class="questionary__legend visually-hidden">желаемая программа</legend>
+            <input class="questionary__radio" type="radio" id="lose" name="program-type" value="lose">
+            <label class="questionary__label" for="lose" >похудение</label>
+            <input class="questionary__radio" type="radio" id="gain" name="program-type" value="gain">
+            <label class="questionary__label" for="gain" >Набор массы</label>
+            <input class="questionary__radio" type="radio" id="unknown" name="program-type" value="unknown">
+            <label class="questionary__label" for="unknown" >Не знаю (Нужен ваш совет)</label>
+          </fieldset>
+          <fieldset class="questionary__part">
+            <legend class="questionary__legend">Контактные данные (владельца кота)</legend>
+            <label class="questionary__label" for="owner-email">E-mail:*</label>
+            <input class="questionary__input" type="email" id="owner-email" name="owner-email" required placeholder="kuklachev@gmail.com">
+            <label class="questionary__label" for="owner-phone">Телефон:*</label>
+            <input class="questionary__input" type="tel" id="owner-phone" name="owner-phone" required placeholder="8 (960) 900-60-90">
+          </fieldset>
+          <fieldset class="questionary__part">
+            <legend class="questionary__legend">Комментарий</legend>
+            <label for="cat-about" class="questionary__label visually-hidden">комментарий</label>
+            <textarea class="questionary__textarea" name="cat-about" id="cat-about" placeholder="Расскажите обо всех повАдках кота"></textarea>
+          </fieldset>
+          <fieldset class="questionary__part">
+            <legend class="questionary__legend">Дополнительно</legend>
+            <ul class="questionary__list">
+              <li class="questionary__item">
+                <input class="questionary__checkbox" type="checkbox" id="add-sweetener" name="add-sweetener">
+                <label class="questionary__label" for="add-sweetener">сахарозаменитель</label>
+              </li>
+              <li class="questionary__item">
+                <input class="questionary__checkbox" type="checkbox" id="add-water" name="add-water">
+                <label class="questionary__label" for="add-water">питьевая вода</label>
+              </li>
+              <li class="questionary__item">
+                <input class="questionary__checkbox" type="checkbox" id="add-milk" name="add-milk">
+                <label class="questionary__label" for="add-milk">молоко</label>
+              </li>
+              <li class="questionary__item">
+                <input class="questionary__checkbox" type="checkbox" id="add-vitamin" name="add-vitamin">
+                <label class="questionary__label" for="add-vitamin">витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="questionary__submit button" type="submit">отправить заявку</button>
+        </form>
+        <p class="questionary-block__footnote">* — Обязательные поля</p>
+      </div>
     </section>
     <section class="contacts">
-      <h2 class="visually-hidden">Где мы находимя</h2>
+      <h2 class="visually-hidden">Где мы находимся</h2>
       <div class="contacts__top">
         <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
         <address class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
