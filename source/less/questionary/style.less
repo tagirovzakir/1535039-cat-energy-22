@@ -8,6 +8,7 @@
   border: none;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 
   &--border {
     border-bottom: 1px solid #d9d9d9;
@@ -34,17 +35,6 @@
   &--add {
     padding-bottom: 34px;
   }
-}
-
-.questionary__legend {
-  font-size: 24px;
-  line-height: 26px;
-  text-transform: initial;
-  width: max-content;
-  box-sizing: border-box;
-  max-width: 100%;
-  padding: 0 22px 35px 20px;
-  background-color: #ffffff;
 
   &--title {
     position: relative;
@@ -59,6 +49,21 @@
       top: 16px;
       z-index: -10;
     }
+  }
+}
+
+.questionary__legend {
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: initial;
+  width: max-content;
+  max-width: 100%;
+  padding: 0 22px 35px 20px;
+  background-color: #ffffff;
+
+  &--title {
+    position: relative;
+    left: -20px;
   }
 }
 

@@ -35,8 +35,8 @@
       </div>
         <form class="questionary-block__form questionary" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="questionary__part questionary__part--cat questionary__part--border">
-            <legend class="questionary__legend visually-hidden">основные данные кота</legend>
             <div class="container questionary-block__container">
+              <legend class="questionary__legend visually-hidden">основные данные кота</legend>
               <div class="questionary__line">
                 <label class="questionary__label" for="cat-name">имя:*</label>
                 <input class="questionary__input" type="text" id="cat-name" name="cat-name" required placeholder="барсик">
@@ -52,8 +52,8 @@
             </div>
           </fieldset>
           <fieldset class="questionary__part questionary__part--program questionary__part--border">
-            <legend class="questionary__legend visually-hidden">желаемая программа</legend>
             <div class="container questionary-block__container">
+              <legend class="questionary__legend visually-hidden">желаемая программа</legend>
               <div class="questionary__line">
                 <input class="questionary__radio" type="radio" id="lose" name="program-type" value="lose">
                 <label class="questionary__label questionary__label--radio" for="lose" >похудение</label>
@@ -68,9 +68,9 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="questionary__part questionary__part--owner">
-            <legend class="questionary__legend questionary__legend--title">Контактные данные<br>(владельца кота)</legend>
+          <fieldset class="questionary__part questionary__part--owner questionary__part--title">
             <div class="container questionary-block__container">
+              <legend class="questionary__legend questionary__legend--title">Контактные данные<br>(владельца кота)</legend>
               <div class="questionary__line">
                 <label class="questionary__label" for="owner-email">E-mail:*</label>
                 <input class="questionary__input" type="email" id="owner-email" name="owner-email" required placeholder="kuklachev@gmail.com">
@@ -81,16 +81,16 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="questionary__part questionary__part--comment">
-            <legend class="questionary__legend questionary__legend--title">Комментарий</legend>
+          <fieldset class="questionary__part questionary__part--comment questionary__part--title">
             <div class="container questionary-block__container">
+              <legend class="questionary__legend questionary__legend--title">Комментарий</legend>
               <label for="cat-about" class="questionary__label visually-hidden">комментарий</label>
               <textarea class="questionary__textarea" name="cat-about" id="cat-about" placeholder="Расскажите обо всех повАдках кота"></textarea>
             </div>
           </fieldset>
-          <fieldset class="questionary__part questionary__part--add">
-            <legend class="questionary__legend questionary__legend--title">Дополнительно</legend>
+          <fieldset class="questionary__part questionary__part--add questionary__part--title">
             <div class="container questionary-block__container">
+              <legend class="questionary__legend questionary__legend--title">Дополнительно</legend>
               <ul class="questionary__list">
                 <li class="questionary__line">
                   <input class="questionary__checkbox" type="checkbox" id="add-sweetener" name="add-sweetener">
