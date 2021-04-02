@@ -1,0 +1,134 @@
+.questionary {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.questionary__part {
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  &--border {
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  &--cat {
+    padding-bottom: 24px;
+  }
+
+  &--program {
+    padding-top: 22px;
+    padding-bottom: 19px;
+    margin-bottom: 26px;
+  }
+
+  &--owner {
+    padding-bottom: 24px;
+  }
+
+  &--comment {
+    padding-bottom: 23px;
+  }
+
+  &--add {
+    padding-bottom: 34px;
+  }
+}
+
+.questionary__legend {
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: initial;
+  white-space: nowrap;
+  padding: 0;
+  margin-bottom: 35px;
+  background-color: #ffffff;
+  position: relative;
+  box-sizing: border-box;
+
+  &--title {
+    left: -@padding;
+    padding-left: 20px;
+    width: calc(100% + @padding * 2);
+    display: flex;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #68b738;
+      margin-left: 22px;
+      margin-top: 16px;
+    }
+  }
+}
+
+.questionary__line {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.questionary__input {
+  width: 100%;
+  min-height: 45px;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+  padding: 13px 15px;
+  font-family: "Oswaldregular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+
+  &::placeholder {
+    color: #444444;
+  }
+}
+
+.questionary__label {
+  margin-right: 12px;
+  white-space: nowrap;
+  color: #444444;
+
+  &--check {
+    color: #000000;
+  }
+}
+
+.questionary__textarea {
+  min-width: 100%;
+  min-height: 150px;
+  box-sizing: border-box;
+  padding: 9px 12px 15px;
+  font-family: "Oswaldregular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+  color: #444444;
+
+  &::placeholder {
+    color: #444444;
+  }
+}
+
+.questionary__list {
+  .list();
+  margin: 0;
+}
+
+.questionary__submit {
+  width: 100%;
+  border: none;
+  font-family: "Oswaldregular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0;
+}
