@@ -1,8 +1,28 @@
 .programs-variants {
   .list();
   box-sizing: border-box;
+
+  @media @desktop {
+    display: flex;
+    margin: 0 -40px;
+  }
 }
 
 .programs-variants__item:not(:last-child) {
   margin-bottom: 20px;
+
+  @media @tabletonly {
+    margin-bottom: 30px;
+  }
+
+  @media @desktop {
+    margin-bottom: 0;
+  }
+}
+
+.programs-variants__item {
+  @media @desktop {
+    margin: 0 40px;
+    width: calc((100% - 80px) / 2);
+  }
 }

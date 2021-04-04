@@ -2,16 +2,26 @@
   .list();
   display: flex;
   justify-content: space-between;
-  position: relative;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .buttons__button {
   border: none;
   background-color: transparent;
-  padding: 0;
+  padding: 4px 10px 6px 11px;
   font-family: "Oswaldregular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+
+  @media @tablet {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media @desktop {
+    padding: 4px 6px 4px 5px;
+  }
 }

@@ -1,7 +1,11 @@
 .data-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+
+  @media @tabletonly {
+    align-items: flex-start;
+  }
 }
 
 .data-list__item {
@@ -9,17 +13,33 @@
   text-transform: uppercase;
 
   &--price {
-    flex-grow: 1;
+    width: 100%;
     display: flex;
     justify-content: center;
     font-size: 14px;
     line-height: 20px;
-    padding: 0 45px;
+    padding: 0;
+
+    @media @tabletonly {
+      flex-direction: column;
+      align-items: flex-end;
+      width: min-content;
+      margin-left: auto;
+      padding-top: 8px;
+    }
+
+    @media @tablet {
+      font-size: 20px;
+    }
   }
 }
 
 .data-list__item--weight {
-  margin-right: 31px;
+  margin-right: auto;
+
+  @media @tablet {
+    margin-right: 42px;
+  }
 }
 
 .data-list__item--weight,
@@ -27,6 +47,11 @@
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+  padding-top: 15px;
+
+  @media @desktop {
+    margin-bottom: 55px;
+  }
 }
 
 .data-list__index {
@@ -39,15 +64,41 @@
   &--time {
     align-self: center;
     width: 87px;
-    background-color: #eaeaea;
+    background-color: #e6e6e6;
     position: relative;
     z-index: 10;
+    color: #444444;
+  }
+
+  @media @tablet {
+    font-size: 14px;
+    line-height: 14px;
+    width: max-content;
+    background-color: #ffffff;
+
+    br {
+      display: none;
+    }
+
+    &--weight,
+    &--time {
+      background-color: #e6e6e6;
+    }
   }
 
   &--price {
     font-family: "Oswaldregular", "Arial", sans-serif;
     font-size: 14px;
     line-height: 20px;
+    background-color: transparent;
+
+    @media @tabletonly {
+      margin-bottom: 9px;
+    }
+
+    @media @tablet {
+      font: inherit;
+    }
   }
 }
 
@@ -56,28 +107,46 @@
   font-size: 24px;
   line-height: 24px;
   margin: 0;
+  box-sizing: border-box;
 
   &--weight,
   &--time {
     order: -1;
     margin-bottom: 14px;
-    max-width: 124px;
+    width: 124px;
     position: relative;
 
     &::before {
       content: "";
-      width: 124px;
-      height: 58px;
+      width: 100%;
+      height: 56px;
       position: absolute;
+      box-sizing: border-box;
       top: -15px;
       left: 50%;
       transform: translateX(-50%);
       border: 1px solid #cdcdcd;
       border-radius: 3px;
+
+      @media @tablet {
+        height: 72px;
+        top: -16px;
+      }
     }
+
+    @media @tablet {
+      margin-bottom: 13px;
+      width: 162px;
+    }
+  }
+
+  @media @tablet {
+    font-size: 30px;
+    line-height: 37px;
   }
 
   &--price {
     font: inherit;
+    margin-left: 2px;
   }
 }

@@ -1,23 +1,56 @@
 .page-footer {
   padding: 49px 0 22px;
   background-color: #f2f2f2;
+
+  @media @tabletonly {
+    padding: 55px 0 61px;
+  }
+
+  @media @desktop {
+    padding: 57px 0 58px;
+  }
+}
+
+.page-footer__wrapper {
+  @media @tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .page-footer__stripe {
   color: #d9d9d9;
   margin: 0;
+
+  @media @tablet {
+    display: none;
+  }
 }
 
 .page-footer__logo {
   display: block;
   width: min-content;
   margin: 0 auto 32px;
+  font-size: 0;
+
+  @media @tablet {
+    margin: 0;
+  }
 }
 
 .page-footer__list {
   margin: 0 auto 21px;
+
+  @media @tablet {
+    margin: 0;
+  }
 }
 
 .page-footer__copyright {
   margin: 0 auto;
+
+  @media @tablet {
+    margin: 0;
+  }
 }

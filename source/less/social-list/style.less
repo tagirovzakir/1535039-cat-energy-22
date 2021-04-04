@@ -5,14 +5,28 @@
   align-items: center;
   padding-top: 20px;
   width: min-content;
+
+  @media @tablet {
+    padding-top: 0;
+  }
 }
 
 .social-list__item {
-  background-repeat: no-repeat;
-  background-position: center;
   font-size: 0;
 
-  &:not(:last-child) {
+  &--vk {
+    margin-right: 36px;
+
+    @media @tablet {
+      margin-right: 27px;
+    }
+  }
+
+  &--ig {
     margin-right: 33px;
+
+    @media @tablet {
+      margin-right: 21px;
+    }
   }
 }
