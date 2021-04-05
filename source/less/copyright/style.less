@@ -3,10 +3,39 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media @tablet {
+    justify-content: flex-end;
+    padding-top: 0;
+  }
+}
+
+.copyright__link {
+  text-decoration: none;
+
+  &--image {
+    font-size: 0;
+
+    &:active {
+      path {
+        fill: #68b738;
+      }
+    }
+
+    @media @tablet {
+      margin-left: 22px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  color: #444444;
+  margin: 0;
 }
