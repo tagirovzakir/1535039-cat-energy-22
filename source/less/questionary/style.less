@@ -11,18 +11,15 @@
   box-sizing: border-box;
   overflow: hidden;
 
-  &--border {
-    border-bottom: 1px solid #d9d9d9;
-  }
-
   &--cat {
     padding-bottom: 24px;
   }
 
   &--program {
-    padding-top: 22px;
-    padding-bottom: 19px;
-    margin-bottom: 26px;
+    padding: 22px @padding 19px;
+    margin: 0 -@padding 26px;
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
   }
 
   &--owner {
