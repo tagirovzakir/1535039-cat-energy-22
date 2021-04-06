@@ -135,6 +135,7 @@
       font-size: 36px;
       line-height: 36px;
       position: static;
+      margin-left: 0;
 
       &::after {
         margin-top: 24px;
@@ -244,6 +245,11 @@
   &--checkbox {
     margin-bottom: 12px;
 
+    @media @tablet {
+      min-width: 221px;
+      width: auto;
+    }
+
     @media @tabletonly {
       margin-bottom: 32px;
       margin-left: 40px;
@@ -252,7 +258,10 @@
 
     @media @desktop {
       margin-bottom: 0;
-      margin-right: 104px;
+
+      &:not(:last-child) {
+        margin-right: 104px;
+      }
     }
   }
 }
