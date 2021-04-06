@@ -3,11 +3,13 @@
   background-color: #ffffff;
 
   @media @tabletonly {
-    padding: 45px 0 10px;
+    padding: 45px 0 0;
+    margin-bottom: 47px;
   }
 
   @media @desktop {
     padding: 71px 0 0;
+    margin-bottom: 11px;
   }
 }
 
@@ -30,9 +32,14 @@
   margin: 0 auto;
 
   @media @tablet {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: min-content min-content;
+    row-gap: 37px;
     counter-reset: li;
+  }
+
+  @media @desktop {
+    grid-template-columns: min-content min-content min-content min-content;
   }
 }
 
@@ -46,8 +53,8 @@
   &:not(:last-child) {
     margin-bottom: 20px;
 
-    @media @tabletonly {
-      margin-bottom: 37px;
+    @media @tablet {
+      margin-bottom: 0;
     }
   }
 
@@ -123,18 +130,16 @@
       margin-right: 153px;
     }
 
-    &--cooking {
-      margin-right: 79px;
+    &--recept {
+      margin-right: 136px;
     }
 
-    &--recept {
-      margin-right: 137px;
+    &--result {
+      margin-left: 1px;
     }
   }
 
   @media @desktop {
-    margin-bottom: 11px;
-
     &--consist {
       margin-right: 94px;
     }
