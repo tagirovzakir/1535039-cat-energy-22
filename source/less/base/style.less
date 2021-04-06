@@ -1,6 +1,17 @@
 .container {
   padding: 0 @padding;
-  max-width: 420px;
+  max-width: 720px;
+  box-sizing: border-box;
+
+  @media @tabletonly {
+    padding: 0 calc(@padding * 1.5);
+    max-width: 1200px;
+  }
+
+  @media @desktop {
+    padding: 0 calc(@padding * 5.5);
+    max-width: 1440px;
+  }
 }
 
 .visually-hidden {
