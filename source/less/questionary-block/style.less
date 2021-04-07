@@ -1,5 +1,15 @@
 .questionary-block {
-  padding-bottom: 32px;
+  margin-bottom: 32px;
+
+  @media @tabletonly {
+    margin-bottom: 72px;
+  }
+
+  @media @desktop {
+    margin-bottom: 82px;
+    max-width: 100%;
+    overflow: hidden;
+  }
 }
 
 .questionary-block__text {
@@ -7,16 +17,15 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-}
 
-.questionary-block__form {
-  margin-bottom: 21px;
-}
+  @media @tablet {
+    max-width: 323px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
 
-.questionary-block__footnote {
-  text-align: center;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  margin: 0;
+  @media @tabletonly {
+    margin-left: 40px;
+  }
 }
