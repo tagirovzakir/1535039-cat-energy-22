@@ -1,54 +1,29 @@
 .main-catalog {
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
-}
+  margin-bottom: 25px;
 
-.main-catalog__list {
-  margin: 0 -@padding;
-}
+  @media @tablet {
+    border: none;
+  }
 
-.main-catalog__more-card {
-  padding: 25px 0;
-  box-sizing: border-box;
-}
+  @media @tabletonly {
+    margin-bottom: 38px;
+  }
 
-.main-catalog__more-title {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #111111;
-  text-align: center;
-  margin: 0 0 8px;
-
-  &::before {
-    content: "";
-    display: block;
-    margin: 0 auto 23px;
-    width: 30px;
-    height: 30px;
-    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23D3D3D3' stroke-width='2' d='M15 0v30M30 15H0'/%3E%3C/svg%3E");
+  @media @desktop {
+    margin-bottom: 43px;
   }
 }
 
-.main-catalog__more-text {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-  color: #444444;
-  text-align: center;
-  margin: 0 0 21px;
-}
+.main-catalog__list {
+  margin: 0 -@padding 0;
 
-.main-catalog__more-button {
-  display: block;
-  min-height: 40px;
-  background-color: #f2f2f2;
-  color: #444444;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  box-sizing: border-box;
-  padding: 10px;
+  @media @tabletonly {
+    margin: 0 -30px 0;
+  }
+
+  @media @desktop {
+    margin: 0 -40px 0;
+  }
 }
