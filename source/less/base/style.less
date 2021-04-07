@@ -1,15 +1,15 @@
 .container {
   padding: 0 @padding;
-  max-width: 720px;
+  max-width: 768px;
   box-sizing: border-box;
 
   @media @tabletonly {
-    padding: 0 calc(@padding * 1.5);
-    max-width: 1200px;
+    padding: 0 @midpadding;
+    max-width: 1440px;
   }
 
   @media @desktop {
-    padding: 0 calc(@padding * 5.5);
+    padding: 0 @largepadding;
     max-width: 1440px;
   }
 }
