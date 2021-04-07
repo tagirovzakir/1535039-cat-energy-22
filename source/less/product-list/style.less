@@ -1,13 +1,127 @@
 .product-list {
   .list();
+
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .product-list__item {
   padding-top: 8px;
   padding-bottom: 11px;
   border-bottom: 1px solid #ebebeb;
+
+  @media @tablet {
+    border: none;
+    padding: 0;
+  }
+
+  @media @tabletonly {
+    margin: 30px;
+    width: calc(100% / 2 - 60px);
+  }
+
+  @media @desktop {
+    margin: 31px 40px 32px;
+    width: calc(100% / 4 - 80px);
+  }
 }
 
 .product-list__product {
   margin: 0 auto;
+
+  @media @tablet {
+    margin: 0;
+  }
+}
+
+.product-list__more-card {
+  padding: 25px 20px;
+  box-sizing: border-box;
+
+  @media @tablet {
+    border: 2px solid #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 431px;
+    align-self: flex-end;
+  }
+
+  @media @tabletonly {
+    padding: 52px 38px 38px 37px;
+  }
+
+  @media @desktop {
+    padding: 49px 36px 38px;
+  }
+}
+
+.product-list__more-title {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  text-align: center;
+  margin: 0 0 8px;
+
+  &::before {
+    content: "";
+    display: block;
+    margin: 0 auto 23px;
+    width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23D3D3D3' stroke-width='2' d='M15 0v30M30 15H0'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media @tablet {
+    font-size: 20px;
+    line-height: 22px;
+    max-width: 134px;
+    margin-bottom: 23px;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23D3D3D3' stroke-width='2' d='M31 0v60M60 31H0'/%3E%3C/svg%3E");
+      margin-bottom: 49px;
+    }
+  }
+}
+
+.product-list__more-text {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  text-align: center;
+  margin: 0 0 21px;
+
+  @media @tablet {
+    max-width: 167px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: auto;
+  }
+}
+
+.product-list__more-button {
+  display: block;
+  min-height: 40px;
+  background-color: #f2f2f2;
+  color: #444444;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 10px;
+
+  @media @tablet {
+    align-self: stretch;
+  }
 }

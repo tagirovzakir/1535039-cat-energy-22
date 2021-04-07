@@ -1,10 +1,24 @@
 .add-product-list {
   .list();
   border-top: 1px solid #ebebeb;
+
+  @media @tabletonly {
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+  }
 }
 
 .add-product-list__item {
   border-bottom: 1px solid #ebebeb;
   padding-top: 13px;
   padding-bottom: 19px;
+  box-sizing: border-box;
+
+  @media @tabletonly {
+    padding: 26px 38px 28px;
+  }
+
+  @media @desktop {
+    padding: 15px 1px 16px;
+  }
 }
