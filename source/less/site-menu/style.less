@@ -40,6 +40,7 @@
   padding-top: 22px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e6e6e6;
+  transition: all 0.1s;
 
   @media @tablet {
     margin-left: 35px;
@@ -68,6 +69,17 @@
 
     &--index::after {
       background-color: #ffffff;
+    }
+  }
+
+  &[href] {
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }

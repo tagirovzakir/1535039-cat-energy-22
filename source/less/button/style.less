@@ -6,10 +6,26 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+
+    .button__text {
+      opacity: 0.3;
+    }
+  }
 }
 
 .button__text {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+  transition: all 0.2s;
 }

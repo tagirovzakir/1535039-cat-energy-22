@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s;
 
   @media @tablet {
     &--vk {
@@ -19,12 +20,15 @@
       height: 33px;
     }
   }
-}
 
-.social-link:active {
-  opacity: 0.3;
+  &:hover,
+  &:focus {
+    .social-link__stroke {
+      stroke: #68b738;
+    }
+  }
 
-  path {
-    fill: #68b738;
+  &:active {
+    opacity: 0.3;
   }
 }
