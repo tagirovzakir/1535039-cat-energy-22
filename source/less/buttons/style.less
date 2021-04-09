@@ -9,12 +9,27 @@
 .buttons__button {
   border: none;
   background-color: transparent;
-  padding: 4px 10px 6px 11px;
+  padding: 4px 0 6px 0;
   font-family: "Oswaldregular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
   text-transform: uppercase;
   color: #000000;
+
+
+  &:not([disabled]) {
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+      border: none;
+    }
+  }
 
   @media @tablet {
     font-size: 20px;
@@ -23,9 +38,5 @@
 
   @media @desktop {
     padding: 4px 6px 4px 5px;
-
-    &:not([disabled]) {
-      cursor: pointer;
-    }
   }
 }
