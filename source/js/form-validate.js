@@ -16,5 +16,3 @@ button.addEventListener("click", function (evt) {
     evt.preventDefault();
   }
 })
-
-
