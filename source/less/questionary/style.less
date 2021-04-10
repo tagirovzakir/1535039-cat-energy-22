@@ -334,11 +334,27 @@
   &--email {
     padding-right: 40px;
     margin-right: -16px;
+
+    &:focus {
+      ~ .questionary__input--email-pic {
+        path {
+          stroke: #68b738;
+        }
+      }
+    }
   }
 
   &--phone {
     padding-right: 40px;
     margin-right: -16px;
+
+    &:focus {
+      ~ .questionary__input--phone-pic {
+        g {
+          fill: #68b738;
+        }
+      }
+    }
   }
 
   &--email-pic {
