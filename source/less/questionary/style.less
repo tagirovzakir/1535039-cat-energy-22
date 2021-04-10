@@ -505,6 +505,12 @@
       border-color: #bababa;
     }
   }
+
+  &:focus {
+    ~ .questionary__label--radio {
+      text-decoration: underline;
+    }
+  }
 }
 
 .questionary__checkbox {
@@ -521,6 +527,11 @@
 
     ~ .questionary__label--check::before {
       border-color: #bababa;
+    }
+  }
+  &:focus {
+    ~ .questionary__label--check {
+      text-decoration: underline;
     }
   }
 }
