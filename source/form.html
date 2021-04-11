@@ -53,27 +53,40 @@
           <fieldset class="questionary__part questionary__part--program">
             <legend class="questionary__legend visually-hidden">желаемая программа</legend>
             <div class="questionary__line questionary__line--program">
-              <input class="questionary__radio" type="radio" id="lose" name="program-type" value="lose">
-              <label class="questionary__label questionary__label--radio" for="lose" >похудение</label>
+              <input class="questionary__radio visually-hidden" type="radio" id="lose" name="program-type" value="lose" checked>
+              <label class="questionary__label questionary__label--radio" for="lose">похудение</label>
             </div>
             <div class="questionary__line questionary__line--program">
-              <input class="questionary__radio" type="radio" id="gain" name="program-type" value="gain">
-              <label class="questionary__label questionary__label--radio" for="gain" >Набор массы</label>
+              <input class="questionary__radio visually-hidden" type="radio" id="gain" name="program-type" value="gain">
+              <label class="questionary__label questionary__label--radio" for="gain">Набор массы</label>
             </div>
             <div class="questionary__line questionary__line--program">
-              <input class="questionary__radio" type="radio" id="unknown" name="program-type" value="unknown">
-              <label class="questionary__label questionary__label--radio" for="unknown" >Не знаю (Нужен ваш совет)</label>
+              <input class="questionary__radio visually-hidden" type="radio" id="unknown" name="program-type" value="unknown">
+              <label class="questionary__label questionary__label--radio" for="unknown">Не знаю (Нужен ваш совет)</label>
             </div>
           </fieldset>
           <fieldset class="questionary__part questionary__part--owner">
-            <legend class="questionary__legend questionary__legend--title questionary__legend--owner">Контактные данные<br>(владельца кота)</legend>
+            <legend class="questionary__legend questionary__legend--title questionary__legend--owner">Контактные данные <br>(владельца кота)</legend>
             <div class="questionary__line questionary__line--email">
               <label class="questionary__label questionary__label--email" for="owner-email">E-mail:*</label>
-              <input class="questionary__input questionary__input--owner" type="email" id="owner-email" name="owner-email" required placeholder="kuklachev@gmail.com">
+              <input class="questionary__input questionary__input--owner questionary__input--email" type="email" id="owner-email" name="owner-email" required placeholder="kuklachev@gmail.com">
+              <svg class="questionary__input--email-pic" width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#222" stroke-width="1.3" d="M1.19 6v8M18.19 6v8M.54 13.35h18M.54 1.35h18M17.89 3.182L9.54 9.677 1.19 3.182V1.65h16.7v1.532z"/>
+              </svg>
             </div>
             <div class="questionary__line questionary__line--phone">
               <label class="questionary__label questionary__label--phone" for="owner-phone">Телефон:*</label>
-              <input class="questionary__input questionary__input--owner" type="tel" id="owner-phone" name="owner-phone" required placeholder="8 (960) 900-60-90">
+              <input class="questionary__input questionary__input--owner questionary__input--phone" type="tel" id="owner-phone" name="owner-phone" required placeholder="8 (960) 900-60-90">
+              <svg class="questionary__input--phone-pic" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)" fill="#000">
+                  <path d="M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1a.75.75 0 000-.9l-3.1-3.1-.9.9 2.1 2zM8.1 19.4v-6.2a.65.65 0 00-.6-.6H3.1a1.22 1.22 0 001.2 1.2h2.5v5H3.1a1.789 1.789 0 01-1.9-1.7v-14a1.77 1.77 0 011.7-1.8h3.9v5H4.4a1.22 1.22 0 00-1.2 1.2h4.4a.65.65 0 00.6-.6V.6a.86.86 0 00-.7-.6H3.1A3 3 0 000 2.9v13.9a2.89 2.89 0 002.9 3.1h4.6a.5.5 0 00.6-.5z"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <path fill="#fff" d="M0 0h20v20H0z"/>
+                  </clipPath>
+                </defs>
+              </svg>
             </div>
           </fieldset>
           <fieldset class="questionary__part questionary__part--comment">
@@ -85,19 +98,19 @@
             <legend class="questionary__legend questionary__legend--title questionary__legend--add">Дополнительно</legend>
             <ul class="questionary__list">
               <li class="questionary__line questionary__line--checkbox">
-                <input class="questionary__checkbox" type="checkbox" id="add-sweetener" name="add-sweetener">
+                <input class="questionary__checkbox visually-hidden" type="checkbox" id="add-sweetener" name="add-sweetener" checked>
                 <label class="questionary__label questionary__label--check" for="add-sweetener">сахарозаменитель</label>
               </li>
               <li class="questionary__line questionary__line--checkbox">
-                <input class="questionary__checkbox" type="checkbox" id="add-water" name="add-water">
+                <input class="questionary__checkbox visually-hidden" type="checkbox" id="add-water" name="add-water">
                 <label class="questionary__label questionary__label--check" for="add-water">питьевая вода</label>
               </li>
               <li class="questionary__line questionary__line--checkbox">
-                <input class="questionary__checkbox" type="checkbox" id="add-milk" name="add-milk">
+                <input class="questionary__checkbox visually-hidden" type="checkbox" id="add-milk" name="add-milk">
                 <label class="questionary__label questionary__label--check" for="add-milk">молоко</label>
               </li>
               <li class="questionary__line questionary__line--checkbox">
-                <input class="questionary__checkbox" type="checkbox" id="add-vitamin" name="add-vitamin">
+                <input class="questionary__checkbox visually-hidden" type="checkbox" id="add-vitamin" name="add-vitamin">
                 <label class="questionary__label questionary__label--check" for="add-vitamin">витамины</label>
               </li>
             </ul>
@@ -167,5 +180,6 @@
     </div>
   </footer>
 <script src="js/main-menu.js"></script>
+<script src="js/form-validate.js"></script>
 </body>
 </html>
