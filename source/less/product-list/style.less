@@ -36,7 +36,7 @@
   }
 }
 
-.product-list__more-card {
+.more-card {
   padding: 25px 20px;
   box-sizing: border-box;
 
@@ -58,7 +58,7 @@
   }
 }
 
-.product-list__more-title {
+.more-card__title {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -92,7 +92,7 @@
   }
 }
 
-.product-list__more-text {
+.more-card__text {
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
@@ -108,7 +108,7 @@
   }
 }
 
-.product-list__more-button {
+.more-card__button {
   display: block;
   min-height: 40px;
   background-color: #f2f2f2;
@@ -120,6 +120,17 @@
   text-decoration: none;
   box-sizing: border-box;
   padding: 10px;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    .more-card__button-text {
+      opacity: 0.3;
+    }
+  }
 
   @media @tablet {
     align-self: stretch;
