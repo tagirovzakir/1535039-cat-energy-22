@@ -87,10 +87,11 @@
 }
 
 .results__images {
-  width: 200%;
+  width: calc(100% * 2 + @padding);
   display: flex;
   margin-bottom: 23px;
   align-items: center;
+  transform-origin: left;
 
   @media @desktop {
     grid-area: i;
@@ -105,14 +106,24 @@
   justify-content: center;
   object-fit: contain;
   max-height: 536px;
+
+  &:first-child {
+    margin-right: @padding;
+  }
 }
 
 .results__image {
   width: 100%;
   height: auto;
+  max-width: 311px;
 
   @media @tabletonly {
     max-width: 700px;
+  }
+
+  @media @desktop {
+    max-width: none;
+    height: 520px;
   }
 }
 

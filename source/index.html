@@ -107,10 +107,16 @@
         </dl>
         <div class="results__images">
           <div class="results__image-box">
-            <img class="results__image results__image--before" src="img/before-mobile.png" alt="Толстый кот до прохождения программы похудения" width="311" height="232">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-fat.png 1x, img/cat-fat@2x.png 2x">
+              <img class="results__image results__image--before" src="img/cat-fat-m.png" srcset="img/cat-fat-m@2x.png 2x" alt="Толстый кот до прохождения программы похудения" width="311" height="232">
+            </picture>
           </div>
           <div class="results__image-box">
-            <img class="results__image results__image--after" src="img/after-mobile.png" alt="Стройный кот после прохождения программы похудения" width="251" height="240">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-skinny.png 1x, img/cat-skinny@2x.png 2x">
+              <img class="results__image results__image--after" src="img/cat-skinny-m.png" srcset="img/cat-skinny-m@2x.png 2x" alt="Стройный кот после прохождения программы похудения" width="251" height="240">
+            </picture>
           </div>
         </div>
         <ul class="results__buttons buttons">
@@ -133,8 +139,11 @@
         <address class="contacts__addres">ул. Большая Конюшенная, д. 19/8<br><br class="contacts__br">Санкт-Петербург</address>
       </div>
       <div class="contacts__map map">
-        <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858716055003!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617132864605!5m2!1sru!2sru" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <img class="map__marker" src="img/map-pin.png" alt="здесь мы находимся" width="57" height="53">
+        <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858716055003!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617132864605!5m2!1sru!2sru" left="100px" top="100px" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <picture class="map__marker-box">
+          <source media="(min-width: 768px)" srcset="img/map-pin.png 1x, img/map-pin@2x.png 2x">
+          <img class="map__marker" src="img/map-pin-m.png" srcset="img/map-pin-m@2x.png 2x" alt="здесь мы находимся" width="57" height="53">
+        </picture>
       </div>
     </section>
   </main>

@@ -30,37 +30,19 @@
   @media @tablet {
     color: #000000;
   }
-
-  @media @desktop {
-    background-image:  linear-gradient(to right, transparent 50%, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 100%);
-  }
 }
 
 .page-header--index,
 .promo {
   @media @desktop {
-    position: relative;
+    background-image: linear-gradient(to right, #ffffff 50vw, rgba(104, 183, 56, 0.85) 50vw, rgba(104, 183, 56, 0.85) 100%),  url("../img/index-background-desktop-1.jpg");
+    background-position-x: 0, 50vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 50%;
-      height: 100%;
-      transform: translateX(100%);
-      background-image: url("../img/index-background-desktop-1.jpg");
-      background-position: top left;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      z-index: -10;
-
-      @media @2dppx {
-        background-image:url("../img/index-background-desktop-1@2x.jpg");
-        background-size: auto 50%;
-        background-position: top left;
-        background-repeat: no-repeat;
-      }
+    @media @2dppx {
+      background-image: linear-gradient(to right, #ffffff 50vw, rgba(104, 183, 56, 0.85) 50vw, rgba(104, 183, 56, 0.85) 100%), url("../img/index-background-desktop-1@2x.jpg");
+      background-size: auto, auto 696px;
     }
   }
 }
@@ -167,9 +149,10 @@
   visibility: visible;
   display: block;
   margin: 0 auto 3px;
+  width: 100%;
 
   @media @tabletonly {
-    width: 709px;
+    width: 100%;
     height: auto;
   }
 
