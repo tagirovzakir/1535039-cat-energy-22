@@ -12,9 +12,16 @@
   }
 }
 
-.map__marker {
+.map__marker-box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.map__marker {
+  @media @tablet {
+    width: 113px;
+    height: 106px;
+  }
 }

@@ -1,5 +1,4 @@
 .page-header {
-  padding-top: 11px;
   overflow: hidden;
 
   @media @tabletonly {
@@ -34,7 +33,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0 @padding 17px;
+  padding: 0 @padding 0;
   border-bottom: 1px solid #e6e6e6;
 
   @media @tablet {
@@ -45,7 +44,9 @@
 
 .page-header__logo {
   font-size: 0;
-  transition: all 0.1s;
+  transition: opacity 0.1s;
+  margin-top: 11px;
+  margin-bottom: 17px;
 
   &[href] {
     &:hover,
@@ -57,11 +58,25 @@
       opacity: 0.6;
     }
   }
+
+  @media @tablet {
+    margin: 0;
+  }
 }
 
 .page-header__logo-image {
   width: 34px;
   height: 38px;
+
+  @media @tabletonly {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media @desktop {
+    width: 202px;
+    height: 59px;
+  }
 }
 
 .page-header__logo-2 {
@@ -95,7 +110,7 @@
     background-color: #000000;
     position: absolute;
     left: 0;
-    transition: all 0.2s;
+    transition: transform 0.2s;
   }
 
   &::before {
@@ -147,5 +162,9 @@
 
   @media @tablet {
     min-width: min-content;
+  }
+
+  @media @desktop {
+    max-width: 50%;
   }
 }
