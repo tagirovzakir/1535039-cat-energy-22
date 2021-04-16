@@ -1,195 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Кэт энерджи - Подбор программы</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="favicon152.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicon152.svg">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="page-body">
-  <header class="page-header">
-    <div class="page-body__container container page-header__wrapper">
-      <div class="page-header__top">
-        <a class="page-header__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/logo-desktop.svg">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Кэт енерджи" width="34" height="38">
-          </picture>
-        </a>
-        <img class="page-header__logo-2" src="img/logo-2.svg" alt="Надпись Кэт Энерджи на английском" width="101" height="18">
-        <button class="page-header__toggle page-header__toggle--hide" type="button"><span class="visually-hidden">Открыть меню</span></button>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кэт энерджи - Подбор программы</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon152.svg">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <div class="page-body__container container page-header__wrapper">
+        <div class="page-header__top">
+          <a class="page-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/logo-desktop.svg">
+              <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Кэт енерджи" width="34" height="38">
+            </picture>
+          </a>
+          <img class="page-header__logo-2" src="img/logo-2.svg" alt="Надпись Кэт Энерджи на английском" width="101" height="18">
+          <button class="page-header__toggle page-header__toggle--hide" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+        <nav class="page-header__nav site-nav">
+          <ul class="site-nav__list site-menu">
+            <li class="site-menu__item"><a class="site-menu__link" href="index.html">главная</a></li>
+            <li class="site-menu__item"><a class="site-menu__link" href="catalog.html">каталог продукции</a></li>
+            <li class="site-menu__item"><a class="site-menu__link site-menu__link--current">подбор программы</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="page-header__nav site-nav">
-        <ul class="site-nav__list site-menu">
-          <li class="site-menu__item"><a class="site-menu__link" href="index.html">главная</a></li>
-          <li class="site-menu__item"><a class="site-menu__link" href="catalog.html">каталог продукции</a></li>
-          <li class="site-menu__item"><a class="site-menu__link site-menu__link--current">подбор программы</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="page-main">
-    <div class="page-body__container container">
-      <h1 class="page-main__title page-title">Подбор программы</h1>
-    </div>
-    <section class="questionary-block">
+    </header>
+    <main class="page-main">
       <div class="page-body__container container">
-        <h2 class="visually-hidden">анкета</h2>
-        <p class="questionary-block__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form class="questionary-block__form questionary" action="https://echo.htmlacademy.ru" method="GET">
-          <fieldset class="questionary__part questionary__part--cat">
-            <legend class="questionary__legend visually-hidden">основные данные кота</legend>
-            <div class="questionary__line questionary__line--cat">
-              <label class="questionary__label questionary__label--cat" for="cat-name">имя:*</label>
-              <input class="questionary__input questionary__input--cat" type="text" id="cat-name" name="cat-name" required placeholder="барсик">
-            </div>
-            <div class="questionary__line questionary__line--cat">
-              <label class="questionary__label questionary__label--cat" for="cat-weight">Вес (кг):*</label>
-              <input class="questionary__input questionary__input--cat" type="number" id="cat-weight" name="cat-weight" required placeholder="7">
-            </div>
-            <div class="questionary__line questionary__line--cat">
-              <label class="questionary__label questionary__label--cat" for="cat-age">Возраст (лет):</label>
-              <input class="questionary__input questionary__input--cat" type="number" id="cat-age" name="cat-age" placeholder="7">
-            </div>
-          </fieldset>
-          <fieldset class="questionary__part questionary__part--program">
-            <legend class="questionary__legend visually-hidden">желаемая программа</legend>
-            <div class="questionary__line questionary__line--program">
-              <input class="questionary__radio visually-hidden" type="radio" id="lose" name="program-type" value="lose" checked>
-              <label class="questionary__label questionary__label--radio" for="lose">похудение</label>
-            </div>
-            <div class="questionary__line questionary__line--program">
-              <input class="questionary__radio visually-hidden" type="radio" id="gain" name="program-type" value="gain">
-              <label class="questionary__label questionary__label--radio" for="gain">Набор массы</label>
-            </div>
-            <div class="questionary__line questionary__line--program">
-              <input class="questionary__radio visually-hidden" type="radio" id="unknown" name="program-type" value="unknown">
-              <label class="questionary__label questionary__label--radio" for="unknown">Не знаю (Нужен ваш совет)</label>
-            </div>
-          </fieldset>
-          <fieldset class="questionary__part questionary__part--owner">
-            <legend class="questionary__legend questionary__legend--title questionary__legend--owner">Контактные данные <br>(владельца кота)</legend>
-            <div class="questionary__line questionary__line--email">
-              <label class="questionary__label questionary__label--email" for="owner-email">E-mail:*</label>
-              <input class="questionary__input questionary__input--owner questionary__input--email" type="email" id="owner-email" name="owner-email" required placeholder="kuklachev@gmail.com">
-              <svg class="questionary__input--email-pic" aria-hidden="true" width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="#222" stroke-width="1.3" d="M1.19 6v8M18.19 6v8M.54 13.35h18M.54 1.35h18M17.89 3.182L9.54 9.677 1.19 3.182V1.65h16.7v1.532z"/>
-              </svg>
-            </div>
-            <div class="questionary__line questionary__line--phone">
-              <label class="questionary__label questionary__label--phone" for="owner-phone">Телефон:*</label>
-              <input class="questionary__input questionary__input--owner questionary__input--phone" type="tel" id="owner-phone" name="owner-phone" required placeholder="8 (960) 900-60-90">
-              <svg class="questionary__input--phone-pic" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0)" fill="#000">
-                  <path d="M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1a.75.75 0 000-.9l-3.1-3.1-.9.9 2.1 2zM8.1 19.4v-6.2a.65.65 0 00-.6-.6H3.1a1.22 1.22 0 001.2 1.2h2.5v5H3.1a1.789 1.789 0 01-1.9-1.7v-14a1.77 1.77 0 011.7-1.8h3.9v5H4.4a1.22 1.22 0 00-1.2 1.2h4.4a.65.65 0 00.6-.6V.6a.86.86 0 00-.7-.6H3.1A3 3 0 000 2.9v13.9a2.89 2.89 0 002.9 3.1h4.6a.5.5 0 00.6-.5z"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <path fill="#fff" d="M0 0h20v20H0z"/>
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-          </fieldset>
-          <fieldset class="questionary__part questionary__part--comment">
-            <legend class="questionary__legend questionary__legend--title questionary__legend--comment">Комментарий</legend>
-            <label for="cat-about" class="questionary__label visually-hidden">комментарий</label>
-            <textarea class="questionary__textarea" name="cat-about" id="cat-about" placeholder="Расскажите обо всех повАдках кота"></textarea>
-          </fieldset>
-          <fieldset class="questionary__part questionary__part--add">
-            <legend class="questionary__legend questionary__legend--title questionary__legend--add">Дополнительно</legend>
-            <ul class="questionary__list">
-              <li class="questionary__line questionary__line--checkbox">
-                <input class="questionary__checkbox visually-hidden" type="checkbox" id="add-sweetener" name="add-sweetener" checked>
-                <label class="questionary__label questionary__label--check" for="add-sweetener">сахарозаменитель</label>
-              </li>
-              <li class="questionary__line questionary__line--checkbox">
-                <input class="questionary__checkbox visually-hidden" type="checkbox" id="add-water" name="add-water">
-                <label class="questionary__label questionary__label--check" for="add-water">питьевая вода</label>
-              </li>
-              <li class="questionary__line questionary__line--checkbox">
-                <input class="questionary__checkbox visually-hidden" type="checkbox" id="add-milk" name="add-milk">
-                <label class="questionary__label questionary__label--check" for="add-milk">молоко</label>
-              </li>
-              <li class="questionary__line questionary__line--checkbox">
-                <input class="questionary__checkbox visually-hidden" type="checkbox" id="add-vitamin" name="add-vitamin">
-                <label class="questionary__label questionary__label--check" for="add-vitamin">витамины</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="questionary__submit button" type="submit"><span class="button__text">отправить заявку</span></button>
-          <p class="questionary__footnote">* — Обязательные поля</p>
-        </form>
+        <h1 class="page-main__title page-title">Подбор программы</h1>
       </div>
-    </section>
-    <section class="contacts contacts--inner">
-      <h2 class="visually-hidden">Где мы находимся</h2>
-      <div class="contacts__top contacts__top--inner">
-        <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__addres">ул. Большая Конюшенная, д. 19/8<br><br class="contacts__br">Санкт-Петербург</address>
-      </div>
-      <div class="contacts__map map">
-        <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858716055003!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617132864605!5m2!1sru!2sru" left="100px" top="100px" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <picture class="map__marker-box">
-          <source media="(min-width: 768px)" srcset="img/map-pin.png 1x, img/map-pin@2x.png 2x">
-          <img class="map__marker" src="img/map-pin-m.png" srcset="img/map-pin-m@2x.png 2x" alt="здесь мы находимся" width="57" height="53">
-        </picture>
-      </div>
-    </section>
-  </main>
-  <footer class="page-footer">
-    <div class="page-body__container container">
-      <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="index.html">
-          <img class="page-footer__logo-image" src="img/footer-logo.svg" alt="Упрощённый логотип Кэт Энерджи" width="128" height="24">
-        </a>
-        <hr class="page-footer__stripe">
-        <ul class="page-footer__list social-list">
-          <li class="social-list__item social-list__item--vk">
-            <a href="#" class="social-link social-link--vk">
-              <span class="visually-hidden">Вконтакте</span>
-              <svg class="social-link__image" width="23" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="social-link__stroke" d="M.07 1.993c0-.622.423-.957 1.27-1.006l3.26.018c.22 0 .365.091.438.274.336.915.711 1.704 1.127 2.369.416.664.96 1.43 1.63 2.295.059.11.154.165.285.165a.276.276 0 00.24-.128l.067-.201.021-3.164c0-.22-.062-.366-.186-.44-.124-.073-.353-.127-.689-.164-.263-.037-.394-.17-.394-.402 0-.05.007-.086.022-.11C7.467.706 8.343.31 9.787.31l1.226-.018c.554 0 1.014.116 1.379.347.364.232.547.598.547 1.098v4.151a.562.562 0 00.284.092c.22 0 .409-.11.57-.33 1.604-1.877 2.472-3.133 2.604-3.767a.29.29 0 01.044-.092c.102-.182.27-.34.503-.475.233-.134.438-.226.613-.274a.507.507 0 01.197-.037h3.392l.219.018c.292 0 .518.116.678.348a.63.63 0 01.12.238c.022.085.037.17.044.256.008.085.011.134.011.146v.128c-.102.5-.36 1.033-.777 1.6-.415.567-.944 1.18-1.586 1.838-.642.659-1.044 1.092-1.204 1.299-.131.146-.197.28-.197.402 0 .098.058.208.175.33l3.195 3.365a.939.939 0 01.263.64c0 .28-.131.512-.394.695a1.826 1.826 0 01-.941.31l-.372.02h-3.327a.794.794 0 00-.087.008.802.802 0 01-.088.01c-.32 0-.62-.116-.897-.348-.102-.098-.788-.817-2.057-2.158a1.107 1.107 0 00-.307-.238c-.058.195-.135.475-.23.841-.094.366-.164.628-.207.787l-.066.31c-.146.427-.452.684-.92.769l-.306.018H9.743c-1.21 0-2.418-.463-3.622-1.39-1.203-.927-2.287-2.125-3.25-3.594-.963-1.469-1.86-3.18-2.691-5.13a1.254 1.254 0 01-.11-.53zM13.223 6.73a1.66 1.66 0 01-.831-.21c-.248-.14-.372-.333-.372-.577V1.737c0-.244-.073-.418-.22-.522-.145-.103-.4-.155-.765-.155l-1.248.036c-.627 0-1.101.092-1.422.275.642.256.963.67.963 1.244v3.218c-.03.305-.175.558-.438.76a1.405 1.405 0 01-.875.301c-.438 0-.774-.177-1.007-.53C5.87 4.925 5.024 3.559 4.469 2.267l-.197-.476-2.91-.018c-.19 0-.296.01-.318.028-.022.018-.033.07-.033.155 0 .11.015.226.044.348l.46 1.024C2.74 5.974 4.07 8.058 5.509 9.583c1.437 1.524 2.848 2.286 4.234 2.286h2.189c.088 0 .153-.021.197-.064.044-.043.08-.125.11-.247l.043-.183.416-1.61c.117-.219.219-.365.306-.438a.86.86 0 01.57-.201c.35 0 .707.176 1.072.53l1.86 1.975c.117.159.24.238.372.238h3.611c.438 0 .657-.091.657-.274a.312.312 0 00-.066-.183l-3.173-3.31c-.248-.257-.372-.531-.372-.824 0-.292.116-.573.35-.841.19-.244.558-.65 1.105-1.216a28.203 28.203 0 001.434-1.591c.408-.494.678-.942.81-1.345l.065-.237a.243.243 0 01-.022-.12c0-.054-.007-.1-.022-.137H17.82a1.199 1.199 0 00-.525.33l-.131.347c-.365.841-1.32 2.14-2.867 3.896a1.672 1.672 0 01-1.073.366z" fill="#666"/>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item social-list__item--ig">
-            <a href="#" class="social-link social-link--ig">
-              <span class="visually-hidden">Инстаграм</span>
-              <svg class="social-link__image" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="social-link__stroke" d="M7.984.063c1.334 0 2.422.015 3.266.046.719.032 1.36.157 1.922.375.541.209 1.01.51 1.406.907.396.395.698.864.906 1.406.22.562.344 1.203.375 1.922.032.843.047 1.932.047 3.265 0 1.334-.015 2.422-.047 3.266-.03.719-.156 1.36-.375 1.922a3.987 3.987 0 01-.906 1.406 3.987 3.987 0 01-1.406.906c-.563.22-1.203.344-1.922.375-.844.032-1.932.047-3.266.047a91.88 91.88 0 01-3.265-.047c-.719-.03-1.36-.156-1.922-.375a3.987 3.987 0 01-1.406-.906 3.987 3.987 0 01-.907-1.406C.266 12.609.141 11.969.11 11.25a91.735 91.735 0 01-.046-3.266c0-1.333.015-2.421.046-3.265.032-.719.157-1.36.375-1.922.209-.542.51-1.01.907-1.406A3.987 3.987 0 012.797.484C3.359.266 4 .141 4.719.11A91.733 91.733 0 017.984.063zm0 1.03c-1.385 0-2.515.016-3.39.048-.563.02-1.084.12-1.563.296a2.853 2.853 0 00-1.594 1.594c-.177.48-.276 1-.296 1.563a98.83 98.83 0 00-.047 3.39c0 1.386.015 2.516.047 3.391.02.563.12 1.083.296 1.563.313.75.844 1.28 1.594 1.593.48.177 1 .276 1.563.297.875.031 2.005.047 3.39.047 1.386 0 2.516-.016 3.391-.047a5.015 5.015 0 001.563-.297 2.852 2.852 0 001.593-1.594c.177-.479.276-1 .297-1.562.031-.875.047-2.005.047-3.39 0-1.386-.016-2.516-.047-3.391a5.015 5.015 0 00-.297-1.563 2.853 2.853 0 00-1.594-1.594c-.479-.177-1-.276-1.562-.296a98.803 98.803 0 00-3.39-.047zm0 10.063c.875 0 1.623-.31 2.243-.93.62-.62.93-1.367.93-2.242s-.31-1.622-.93-2.242a3.056 3.056 0 00-2.243-.93c-.875 0-1.622.31-2.242.93-.62.62-.93 1.367-.93 2.242s.31 1.623.93 2.243c.62.62 1.367.93 2.242.93zm0-7.234c1.125 0 2.084.396 2.875 1.187.792.792 1.188 1.75 1.188 2.875s-.396 2.084-1.188 2.875c-.791.792-1.75 1.188-2.875 1.188s-2.083-.396-2.875-1.188c-.791-.791-1.187-1.75-1.187-2.875s.396-2.083 1.187-2.875c.792-.791 1.75-1.187 2.875-1.187zm5.188-.156c0 .26-.094.481-.281.664a.949.949 0 01-.688.273.904.904 0 01-.664-.273.904.904 0 01-.273-.664c0-.271.09-.5.273-.688a.891.891 0 01.664-.281.93.93 0 01.68.289.93.93 0 01.289.68z" fill="#666"/>
-            </svg>
-            </a>
-          </li>
-          <li class="social-list__item social-list__item--fb">
-            <a href="#" class="social-link social-link--fb">
-              <span class="visually-hidden">Фейсбук</span>
-              <svg class="social-link__image" width="13" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="social-link__stroke" d="M11.5.833H8.75A4.63 4.63 0 005.51 2.15a4.45 4.45 0 00-1.343 3.177v2.697h-2.75v3.595h2.75v7.191h3.666v-7.19h2.75l.917-3.596H7.833V5.327a.89.89 0 01.269-.635.926.926 0 01.648-.263h2.75V.833z" stroke="#666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <hr class="page-footer__stripe">
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank">
-            <span class="copyright__text">HTML Academy</span>
+      <section class="questionary-block">
+        <div class="page-body__container container">
+          <h2 class="visually-hidden">анкета</h2>
+          <p class="questionary-block__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <form class="questionary-block__form questionary" action="https://echo.htmlacademy.ru" method="GET">
+            <fieldset class="questionary__part questionary__part--cat">
+              <legend class="questionary__legend visually-hidden">основные данные кота</legend>
+              <div class="questionary__line questionary__line--cat">
+                <label class="questionary__label questionary__label--cat" for="cat-name">имя:*</label>
+                <input class="questionary__input questionary__input--cat" type="text" id="cat-name" name="cat-name" required placeholder="барсик">
+              </div>
+              <div class="questionary__line questionary__line--cat">
+                <label class="questionary__label questionary__label--cat" for="cat-weight">Вес (кг):*</label>
+                <input class="questionary__input questionary__input--cat" type="number" id="cat-weight" name="cat-weight" required placeholder="7">
+              </div>
+              <div class="questionary__line questionary__line--cat">
+                <label class="questionary__label questionary__label--cat" for="cat-age">Возраст (лет):</label>
+                <input class="questionary__input questionary__input--cat" type="number" id="cat-age" name="cat-age" placeholder="7">
+              </div>
+            </fieldset>
+            <fieldset class="questionary__part questionary__part--program">
+              <legend class="questionary__legend visually-hidden">желаемая программа</legend>
+              <div class="questionary__line questionary__line--program">
+                <input class="questionary__radio visually-hidden" type="radio" id="lose" name="program-type" value="lose" checked>
+                <label class="questionary__label questionary__label--radio" for="lose">похудение</label>
+              </div>
+              <div class="questionary__line questionary__line--program">
+                <input class="questionary__radio visually-hidden" type="radio" id="gain" name="program-type" value="gain">
+                <label class="questionary__label questionary__label--radio" for="gain">Набор массы</label>
+              </div>
+              <div class="questionary__line questionary__line--program">
+                <input class="questionary__radio visually-hidden" type="radio" id="unknown" name="program-type" value="unknown">
+                <label class="questionary__label questionary__label--radio" for="unknown">Не знаю (Нужен ваш совет)</label>
+              </div>
+            </fieldset>
+            <fieldset class="questionary__part questionary__part--owner">
+              <legend class="questionary__legend questionary__legend--title questionary__legend--owner">Контактные данные <br>(владельца кота)</legend>
+              <div class="questionary__line questionary__line--email">
+                <label class="questionary__label questionary__label--email" for="owner-email">E-mail:*</label>
+                <input class="questionary__input questionary__input--owner questionary__input--email" type="email" id="owner-email" name="owner-email" required placeholder="kuklachev@gmail.com">
+                <svg class="questionary__input--email-pic" aria-hidden="true" width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="#222" stroke-width="1.3" d="M1.19 6v8M18.19 6v8M.54 13.35h18M.54 1.35h18M17.89 3.182L9.54 9.677 1.19 3.182V1.65h16.7v1.532z"/>
+                </svg>
+              </div>
+              <div class="questionary__line questionary__line--phone">
+                <label class="questionary__label questionary__label--phone" for="owner-phone">Телефон:*</label>
+                <input class="questionary__input questionary__input--owner questionary__input--phone" type="tel" id="owner-phone" name="owner-phone" required placeholder="8 (960) 900-60-90">
+                <svg class="questionary__input--phone-pic" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)" fill="#000">
+                    <path d="M17.9 9.4H9.4v1.2h8.5l-2.1 2.1.9.9 3.1-3.1a.75.75 0 000-.9l-3.1-3.1-.9.9 2.1 2zM8.1 19.4v-6.2a.65.65 0 00-.6-.6H3.1a1.22 1.22 0 001.2 1.2h2.5v5H3.1a1.789 1.789 0 01-1.9-1.7v-14a1.77 1.77 0 011.7-1.8h3.9v5H4.4a1.22 1.22 0 00-1.2 1.2h4.4a.65.65 0 00.6-.6V.6a.86.86 0 00-.7-.6H3.1A3 3 0 000 2.9v13.9a2.89 2.89 0 002.9 3.1h4.6a.5.5 0 00.6-.5z"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <path fill="#fff" d="M0 0h20v20H0z"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </fieldset>
+            <fieldset class="questionary__part questionary__part--comment">
+              <legend class="questionary__legend questionary__legend--title questionary__legend--comment">Комментарий</legend>
+              <label for="cat-about" class="questionary__label visually-hidden">комментарий</label>
+              <textarea class="questionary__textarea" name="cat-about" id="cat-about" placeholder="Расскажите обо всех повАдках кота"></textarea>
+            </fieldset>
+            <fieldset class="questionary__part questionary__part--add">
+              <legend class="questionary__legend questionary__legend--title questionary__legend--add">Дополнительно</legend>
+              <ul class="questionary__list">
+                <li class="questionary__line questionary__line--checkbox">
+                  <input class="questionary__checkbox visually-hidden" type="checkbox" id="add-sweetener" name="add-sweetener" checked>
+                  <label class="questionary__label questionary__label--check" for="add-sweetener">сахарозаменитель</label>
+                </li>
+                <li class="questionary__line questionary__line--checkbox">
+                  <input class="questionary__checkbox visually-hidden" type="checkbox" id="add-water" name="add-water">
+                  <label class="questionary__label questionary__label--check" for="add-water">питьевая вода</label>
+                </li>
+                <li class="questionary__line questionary__line--checkbox">
+                  <input class="questionary__checkbox visually-hidden" type="checkbox" id="add-milk" name="add-milk">
+                  <label class="questionary__label questionary__label--check" for="add-milk">молоко</label>
+                </li>
+                <li class="questionary__line questionary__line--checkbox">
+                  <input class="questionary__checkbox visually-hidden" type="checkbox" id="add-vitamin" name="add-vitamin">
+                  <label class="questionary__label questionary__label--check" for="add-vitamin">витамины</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="questionary__submit button" type="submit"><span class="button__text">отправить заявку</span></button>
+            <p class="questionary__footnote">* — Обязательные поля</p>
+          </form>
+        </div>
+      </section>
+      <section class="contacts contacts--inner">
+        <h2 class="visually-hidden">Где мы находимся</h2>
+        <div class="contacts__top contacts__top--inner">
+          <p class="contacts__text">приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__addres">ул. Большая Конюшенная, д. 19/8<br><br class="contacts__br">Санкт-Петербург</address>
+        </div>
+        <div class="contacts__map map">
+          <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858716055003!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617132864605!5m2!1sru!2sru" left="100px" top="100px" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <picture class="map__marker-box">
+            <source media="(min-width: 768px)" srcset="img/map-pin.png 1x, img/map-pin@2x.png 2x">
+            <img class="map__marker" src="img/map-pin-m.png" srcset="img/map-pin-m@2x.png 2x" alt="здесь мы находимся" width="57" height="53">
+          </picture>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-body__container container">
+        <div class="page-footer__wrapper">
+          <a class="page-footer__logo" href="index.html">
+            <img class="page-footer__logo-image" src="img/footer-logo.svg" alt="Упрощённый логотип Кэт Энерджи" width="128" height="24">
           </a>
-          <a class="copyright__link copyright__link--image" href="https://htmlacademy.ru/intensive/adaptive" target="blank">
-            <svg width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.643.016L13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256zm0-11.564l-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237z" fill="#666"/>
-            </svg>
-          </a>
+          <hr class="page-footer__stripe">
+          <ul class="page-footer__list social-list">
+            <li class="social-list__item social-list__item--vk">
+              <a href="#" class="social-link social-link--vk">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg class="social-link__image" width="23" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="social-link__stroke" d="M.07 1.993c0-.622.423-.957 1.27-1.006l3.26.018c.22 0 .365.091.438.274.336.915.711 1.704 1.127 2.369.416.664.96 1.43 1.63 2.295.059.11.154.165.285.165a.276.276 0 00.24-.128l.067-.201.021-3.164c0-.22-.062-.366-.186-.44-.124-.073-.353-.127-.689-.164-.263-.037-.394-.17-.394-.402 0-.05.007-.086.022-.11C7.467.706 8.343.31 9.787.31l1.226-.018c.554 0 1.014.116 1.379.347.364.232.547.598.547 1.098v4.151a.562.562 0 00.284.092c.22 0 .409-.11.57-.33 1.604-1.877 2.472-3.133 2.604-3.767a.29.29 0 01.044-.092c.102-.182.27-.34.503-.475.233-.134.438-.226.613-.274a.507.507 0 01.197-.037h3.392l.219.018c.292 0 .518.116.678.348a.63.63 0 01.12.238c.022.085.037.17.044.256.008.085.011.134.011.146v.128c-.102.5-.36 1.033-.777 1.6-.415.567-.944 1.18-1.586 1.838-.642.659-1.044 1.092-1.204 1.299-.131.146-.197.28-.197.402 0 .098.058.208.175.33l3.195 3.365a.939.939 0 01.263.64c0 .28-.131.512-.394.695a1.826 1.826 0 01-.941.31l-.372.02h-3.327a.794.794 0 00-.087.008.802.802 0 01-.088.01c-.32 0-.62-.116-.897-.348-.102-.098-.788-.817-2.057-2.158a1.107 1.107 0 00-.307-.238c-.058.195-.135.475-.23.841-.094.366-.164.628-.207.787l-.066.31c-.146.427-.452.684-.92.769l-.306.018H9.743c-1.21 0-2.418-.463-3.622-1.39-1.203-.927-2.287-2.125-3.25-3.594-.963-1.469-1.86-3.18-2.691-5.13a1.254 1.254 0 01-.11-.53zM13.223 6.73a1.66 1.66 0 01-.831-.21c-.248-.14-.372-.333-.372-.577V1.737c0-.244-.073-.418-.22-.522-.145-.103-.4-.155-.765-.155l-1.248.036c-.627 0-1.101.092-1.422.275.642.256.963.67.963 1.244v3.218c-.03.305-.175.558-.438.76a1.405 1.405 0 01-.875.301c-.438 0-.774-.177-1.007-.53C5.87 4.925 5.024 3.559 4.469 2.267l-.197-.476-2.91-.018c-.19 0-.296.01-.318.028-.022.018-.033.07-.033.155 0 .11.015.226.044.348l.46 1.024C2.74 5.974 4.07 8.058 5.509 9.583c1.437 1.524 2.848 2.286 4.234 2.286h2.189c.088 0 .153-.021.197-.064.044-.043.08-.125.11-.247l.043-.183.416-1.61c.117-.219.219-.365.306-.438a.86.86 0 01.57-.201c.35 0 .707.176 1.072.53l1.86 1.975c.117.159.24.238.372.238h3.611c.438 0 .657-.091.657-.274a.312.312 0 00-.066-.183l-3.173-3.31c-.248-.257-.372-.531-.372-.824 0-.292.116-.573.35-.841.19-.244.558-.65 1.105-1.216a28.203 28.203 0 001.434-1.591c.408-.494.678-.942.81-1.345l.065-.237a.243.243 0 01-.022-.12c0-.054-.007-.1-.022-.137H17.82a1.199 1.199 0 00-.525.33l-.131.347c-.365.841-1.32 2.14-2.867 3.896a1.672 1.672 0 01-1.073.366z" fill="#666"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item social-list__item--ig">
+              <a href="#" class="social-link social-link--ig">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg class="social-link__image" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="social-link__stroke" d="M7.984.063c1.334 0 2.422.015 3.266.046.719.032 1.36.157 1.922.375.541.209 1.01.51 1.406.907.396.395.698.864.906 1.406.22.562.344 1.203.375 1.922.032.843.047 1.932.047 3.265 0 1.334-.015 2.422-.047 3.266-.03.719-.156 1.36-.375 1.922a3.987 3.987 0 01-.906 1.406 3.987 3.987 0 01-1.406.906c-.563.22-1.203.344-1.922.375-.844.032-1.932.047-3.266.047a91.88 91.88 0 01-3.265-.047c-.719-.03-1.36-.156-1.922-.375a3.987 3.987 0 01-1.406-.906 3.987 3.987 0 01-.907-1.406C.266 12.609.141 11.969.11 11.25a91.735 91.735 0 01-.046-3.266c0-1.333.015-2.421.046-3.265.032-.719.157-1.36.375-1.922.209-.542.51-1.01.907-1.406A3.987 3.987 0 012.797.484C3.359.266 4 .141 4.719.11A91.733 91.733 0 017.984.063zm0 1.03c-1.385 0-2.515.016-3.39.048-.563.02-1.084.12-1.563.296a2.853 2.853 0 00-1.594 1.594c-.177.48-.276 1-.296 1.563a98.83 98.83 0 00-.047 3.39c0 1.386.015 2.516.047 3.391.02.563.12 1.083.296 1.563.313.75.844 1.28 1.594 1.593.48.177 1 .276 1.563.297.875.031 2.005.047 3.39.047 1.386 0 2.516-.016 3.391-.047a5.015 5.015 0 001.563-.297 2.852 2.852 0 001.593-1.594c.177-.479.276-1 .297-1.562.031-.875.047-2.005.047-3.39 0-1.386-.016-2.516-.047-3.391a5.015 5.015 0 00-.297-1.563 2.853 2.853 0 00-1.594-1.594c-.479-.177-1-.276-1.562-.296a98.803 98.803 0 00-3.39-.047zm0 10.063c.875 0 1.623-.31 2.243-.93.62-.62.93-1.367.93-2.242s-.31-1.622-.93-2.242a3.056 3.056 0 00-2.243-.93c-.875 0-1.622.31-2.242.93-.62.62-.93 1.367-.93 2.242s.31 1.623.93 2.243c.62.62 1.367.93 2.242.93zm0-7.234c1.125 0 2.084.396 2.875 1.187.792.792 1.188 1.75 1.188 2.875s-.396 2.084-1.188 2.875c-.791.792-1.75 1.188-2.875 1.188s-2.083-.396-2.875-1.188c-.791-.791-1.187-1.75-1.187-2.875s.396-2.083 1.187-2.875c.792-.791 1.75-1.187 2.875-1.187zm5.188-.156c0 .26-.094.481-.281.664a.949.949 0 01-.688.273.904.904 0 01-.664-.273.904.904 0 01-.273-.664c0-.271.09-.5.273-.688a.891.891 0 01.664-.281.93.93 0 01.68.289.93.93 0 01.289.68z" fill="#666"/>
+              </svg>
+              </a>
+            </li>
+            <li class="social-list__item social-list__item--fb">
+              <a href="#" class="social-link social-link--fb">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg class="social-link__image" width="13" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="social-link__stroke" d="M11.5.833H8.75A4.63 4.63 0 005.51 2.15a4.45 4.45 0 00-1.343 3.177v2.697h-2.75v3.595h2.75v7.191h3.666v-7.19h2.75l.917-3.596H7.833V5.327a.89.89 0 01.269-.635.926.926 0 01.648-.263h2.75V.833z" stroke="#666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <hr class="page-footer__stripe">
+          <div class="page-footer__copyright copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank">
+              <span class="copyright__text">HTML Academy</span>
+            </a>
+            <a class="copyright__link copyright__link--image" href="https://htmlacademy.ru/intensive/adaptive" target="blank">
+              <svg width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.643.016L13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256zm0-11.564l-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237z" fill="#666"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-<script src="js/main-menu.js"></script>
-<script src="js/form-validate.js"></script>
-</body>
+    </footer>
+  <script src="js/main-menu.js"></script>
+  <script src="js/form-validate.js"></script>
+  </body>
 </html>
