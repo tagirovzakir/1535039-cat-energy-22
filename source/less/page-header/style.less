@@ -68,6 +68,20 @@
   width: 34px;
   height: 38px;
 
+  &--full {
+    display: none;
+  }
+
+  @media @tablet {
+    &--full {
+      display: block;
+    }
+
+    &--min {
+      display: none;
+    }
+  }
+
   @media @tabletonly {
     width: 174px;
     height: 52px;
@@ -82,6 +96,17 @@
 .page-header__logo-2 {
   width: 101px;
   height: 18px;
+
+  &[href] {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
 
   @media @tablet {
     display: none;
