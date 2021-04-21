@@ -12,25 +12,29 @@
 
 .copyright__link {
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 
-  &--image {
-    font-size: 0;
-
-    &:hover,
-    &:focus,
-    &:active {
-      path {
-        fill: #68b738;
-      }
-    }
-
-    @media @tablet {
-      margin-left: 22px;
+  &:hover,
+  &:focus {
+    .copyright__image {
+      color: #68b738;
     }
   }
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.copyright__image {
+  font-size: 0;
+  color: #666666;
+
+  @media @tablet {
+    margin-left: 22px;
   }
 }
 

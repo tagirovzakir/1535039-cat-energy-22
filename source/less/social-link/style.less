@@ -1,13 +1,23 @@
 .social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: opacity 0.2s;
+  font-size: 0;
+  color: #666666;
 
+  &:hover,
+  &:focus {
+    color: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social-link__image {
   @media @tablet {
     &--vk {
-      width: 30px;
-      height: 22px;
+      width: 29px;
+      height: 17px;
     }
 
     &--ig {
@@ -16,19 +26,8 @@
     }
 
     &--fb {
-      width: 28px;
-      height: 33px;
+      width: 17px;
+      height: 29px;
     }
-  }
-
-  &:hover,
-  &:focus {
-    .social-link__stroke {
-      stroke: #68b738;
-    }
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
