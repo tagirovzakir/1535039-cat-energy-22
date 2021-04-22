@@ -8,7 +8,7 @@
   }
 
   @media @desktop {
-    padding: 71px 0 0;
+    padding: 31px 0 0;
     margin-bottom: 11px;
     overflow: hidden;
   }
@@ -35,14 +35,14 @@
 
   @media @tablet {
     display: grid;
-    grid-template-columns: min-content min-content;
+    grid-template-columns: 50% 50%;
     row-gap: 37px;
     counter-reset: li;
   }
 
   @media @desktop {
-    grid-template-columns: min-content min-content min-content min-content;
-    margin-right: -20px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-right: -4px;
   }
 }
 
@@ -51,7 +51,7 @@
   min-height: 60px;
   display: grid;
   grid-template-columns: min-content 1fr;
-  align-content: start;
+  align-items: center;
 
   &:not(:last-child) {
     margin-bottom: 20px;
@@ -75,6 +75,11 @@
       margin-bottom: 31px;
       width: 80px;
       height: 80px;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      z-index: 2;
     }
   }
 
@@ -112,16 +117,19 @@
 
   @media @tablet {
     padding: 0;
-    width: min-content;
     grid-template-rows: min-content 1fr;
+    align-items: start;
 
     &::after {
       content: counter(li);
       counter-increment: li;
       grid-row-start: 1;
       grid-row-end: 3;
-      grid-column-start: 2;
+      grid-column-start: 1;
       grid-column-end: 3;
+      width: min-content;
+      justify-self: end;
+      text-align: right;
       font-size: 280px;
       line-height: 280px;
       color: #f2f2f2;
@@ -130,29 +138,41 @@
 
   @media @tabletonly {
     &--consist {
-      margin-right: 153px;
+      margin-right: 124px;
+    }
+
+    &--cooking {
+      margin-left: 29px;
+      margin-right: 79px;
     }
 
     &--recept {
-      margin-right: 136px;
+      margin-right: 107px;
     }
 
     &--result {
-      margin-left: 1px;
+      margin-left: 30px;
+      margin-right: 75px;
     }
   }
 
   @media @desktop {
     &--consist {
-      margin-right: 94px;
+      margin-right: 76px;
     }
 
     &--cooking {
-      margin-right: 79px;
+      margin-left: 18px;
+      margin-right: 42px;
     }
 
     &--recept {
-      margin-right: 77px;
+      margin-left: 37px;
+      margin-right: 21px;
+    }
+
+    &--result {
+      margin-left: 56px;
     }
   }
 }

@@ -1,11 +1,13 @@
 .social-list {
   .list();
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
   padding-top: 20px;
-  width: min-content;
+  margin-left: -4px;
 
   @media @tablet {
+    margin-left: 0;
     padding-top: 0;
   }
 }
@@ -15,18 +17,26 @@
   align-items: center;
 
   &--vk {
-    margin-right: 36px;
+    margin: 0 18px;
 
     @media @tablet {
-      margin-right: 27px;
+      margin: 0 14px;
     }
   }
 
   &--ig {
-    margin-right: 33px;
+    margin: 0 19px;
 
     @media @tablet {
-      margin-right: 21px;
+      margin: 0 14px;
+    }
+  }
+
+  &--fb {
+    margin: 0 20px;
+
+    @media @tablet {
+      margin: 0 15px;
     }
   }
 }
