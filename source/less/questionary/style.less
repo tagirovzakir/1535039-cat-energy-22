@@ -23,30 +23,30 @@
   overflow: hidden;
 
   &--cat {
-    margin-bottom: 27px;
+    margin-bottom: 14px;
 
     @media @tabletonly {
-      margin-bottom: 72px;
+      margin-bottom: 52px;
       margin-left: 41px;
       margin-right: 37px;
     }
 
     @media @desktop {
       margin-left: 1px;
-      margin-bottom: 69px;
+      margin-bottom: 49px;
       grid-column-start: 1;
     }
   }
 
   &--program {
-    padding: 22px @padding 19px;
+    padding: 22px @padding 6px;
     margin: 0 -@padding 26px;
     border-bottom: 1px solid #d9d9d9;
     border-top: 1px solid #d9d9d9;
 
     @media @tablet {
       border: 1px solid #e7e7e7;
-      padding: 25px 28px;
+      padding: 25px 28px 12px;
     }
 
     @media @tabletonly {
@@ -62,15 +62,15 @@
   }
 
   &--owner {
-    margin-bottom: 24px;
+    margin-bottom: 10px;
 
     @media @tablet {
-      margin-bottom: 65px;
+      margin-bottom: 45px;
     }
 
     @media @desktop {
       margin-left: 1px;
-      margin-bottom: 69px;
+      margin-bottom: 49px;
       grid-column: 1 / span 2;
       display: flex;
       flex-wrap: wrap;
@@ -99,7 +99,7 @@
     margin-bottom: 22px;
 
     @media @desktop {
-      margin-bottom: 61px;
+      margin-bottom: 41px;
       grid-column: 1 / span 2;
     }
   }
@@ -202,7 +202,7 @@
   width: 100%;
   box-sizing: border-box;
 
-  &--cat:not(:last-child) {
+  &--cat {
     margin-bottom: 13px;
 
     @media @tablet {
@@ -210,7 +210,7 @@
     }
   }
 
-  &--program:not(:last-child) {
+  &--program {
     margin-bottom: 13px;
   }
 
@@ -220,6 +220,7 @@
 
   &--email {
     margin-bottom: 14px;
+    position: relative;
 
     @media @tabletonly {
       margin-bottom: 20px;
@@ -229,20 +230,25 @@
 
     @media @desktop {
       width: calc((100% - 80px) / 2);
+      margin-bottom: 20px;
       padding-left: 1px;
-      margin-bottom: 0;
       margin-right: 78px;
     }
   }
 
   &--phone {
+    margin-bottom: 14px;
+    position: relative;
+
     @media @tabletonly {
+      margin-bottom: 20px;
       padding-left: 38px;
       padding-right: 36px;
     }
 
     @media @desktop {
       width: calc((100% - 80px) / 2 + 2px);
+      margin-bottom: 20px;
     }
   }
 
@@ -261,11 +267,9 @@
     }
 
     @media @desktop {
-      margin-bottom: 0;
-
-      &:not(:last-child) {
-        margin-right: 104px;
-      }
+      margin-bottom: 20px;
+      margin-left: 24px;
+      margin-right: 80px;
     }
   }
 }
@@ -288,7 +292,7 @@
   }
 
   &--error {
-    border: 2px solid #ff8282;
+    outline: 2px solid #ff8282;
 
     ~ .questionary__input--email-pic {
       path {
@@ -333,7 +337,6 @@
 
   &--email {
     padding-right: 40px;
-    margin-right: -16px;
 
     &:focus {
       ~ .questionary__input--email-pic {
@@ -346,7 +349,6 @@
 
   &--phone {
     padding-right: 40px;
-    margin-right: -16px;
 
     &:focus {
       ~ .questionary__input--phone-pic {
@@ -360,11 +362,11 @@
   &--email-pic {
     width: 19px;
     height: 14px;
-    position: relative;
+    position: absolute;
     right: 15px;
 
     @media @tabletonly {
-      right: 19px;
+      right: 54px;
     }
 
     @media @desktop {
@@ -375,10 +377,14 @@
   &--phone-pic {
     width: 20px;
     height: 20px;
-    position: relative;
+    position: absolute;
     right: 13px;
 
-    @media @tablet {
+    @media @tabletonly {
+      right: 53px;
+    }
+
+    @media @desktop {
       right: 17px;
     }
   }
@@ -393,8 +399,8 @@
 
   &:focus,
   &:active {
-    border: 2px solid #444444;
-    outline: none;
+    outline: 2px solid #444444;
+    outline-offset: -2px;
   }
 }
 
@@ -606,6 +612,8 @@
   @media @desktop {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -24px;
+    margin-right: -56px;
   }
 }
 
