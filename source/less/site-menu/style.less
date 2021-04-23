@@ -52,23 +52,31 @@
     margin-left: 35px;
     border: none;
     padding: 0;
+    position: relative;
 
     &--current::after {
       content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
       width: 100%;
       height: 2px;
-      display: block;
       background-color: #68b738;
     }
   }
 
   @media @tabletonly {
+    padding-bottom: 10px;
+
     &--current::after {
       margin-top: 10px;
     }
   }
 
   @media @desktop {
+    padding-bottom: 8px;
+
     &--current::after {
       margin-top: 8px;
     }
