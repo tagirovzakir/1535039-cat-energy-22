@@ -57,7 +57,7 @@
     &--current::after {
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: -2px;
       left: 50%;
       transform: translateX(-50%);
       width: 100%;
@@ -68,17 +68,13 @@
 
   @media @tabletonly {
     padding-bottom: 10px;
-
-    &--current::after {
-      margin-top: 10px;
-    }
   }
 
   @media @desktop {
     padding-bottom: 8px;
 
     &--current::after {
-      margin-top: 8px;
+      bottom: -5px;
     }
 
     &--index::after {
