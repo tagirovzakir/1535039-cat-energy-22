@@ -88,11 +88,18 @@
 }
 
 .results__images {
-  width: calc(200% + @padding);
+  width: 100%;
   display: flex;
   margin-bottom: 21px;
+  margin-right: calc(-@padding / 2);
+  margin-left: calc(-@padding / 2);
   align-items: center;
-  transform-origin: left;
+  transition: transform .3s;
+  transform: translateX(0);
+
+  &--after {
+  transform: translateX(calc(-100% - @padding));
+  }
 
   @media @desktop {
     grid-area: i;
@@ -100,16 +107,14 @@
 }
 
 .results__image-box {
-  width: 100%;
+  min-width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   height: 240px;
   max-height: 536px;
-
-  &:first-child {
-    margin-right: @padding;
-  }
+  margin-right: calc(@padding / 2);
+  margin-left: calc(@padding / 2);
 
   @media @tabletonly {
     height: 525px;
@@ -181,6 +186,11 @@
   height: 6px;
   background: #68b738;
   border-radius: 6px;
+  transition: transform .3s;
+
+  &--after {
+    transform: translateX(100%);
+  }
 
   @media @tablet {
     position: absolute;
