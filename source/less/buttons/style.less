@@ -2,7 +2,7 @@
   .list();
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   box-sizing: border-box;
 }
 
@@ -29,6 +29,10 @@
     &:active {
       border: none;
     }
+  }
+
+  &[disabled] {
+    opacity: 0.5;
   }
 
   @media @tablet {
