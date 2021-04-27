@@ -10,5 +10,6 @@ function menuToggle() {
   toggle.addEventListener("click", function () {
     toggle.classList.toggle("page-header__toggle--close");
     menu.classList.toggle("site-menu--hide");
-  })
+  });
+  {passive: true};
 }

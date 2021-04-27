@@ -8,22 +8,26 @@ function mobileSlider(e) {
   if (e.matches) {
     buttons[0].setAttribute("disabled", "disabled");
     buttons[1].removeAttribute("disabled");
+    bar.removeAttribute("role");
+    bar.removeAttribute("aria-label");
     imageBox.forEach(el => el.classList.remove("results__image-box--hide"));
 
     buttons.forEach(button => {
       button.removeEventListener("click", bigSlide)
-      button.addEventListener("click", minSlide)
+      button.addEventListener("click", minSlide, {passive: true})
     })
   } else {
     buttons[0].setAttribute("disabled", "disabled");
     buttons[1].removeAttribute("disabled");
     slide.classList.remove("results__images--after");
     bar.classList.remove("results__bar--after");
+    bar.setAttribute("role", "button");
+    bar.setAttribute("aria-label", "Передвиньте ползунок, чтобы увидеть результат");
     imageBox[1].classList.add("results__image-box--hide");
 
     buttons.forEach(button => {
       button.removeEventListener("click", minSlide)
-      button.addEventListener("click", bigSlide)
+      button.addEventListener("click", bigSlide, {passive: true})
     })
   }
 }

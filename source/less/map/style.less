@@ -1,25 +1,59 @@
 .map {
+  display: block;
   width: 100%;
   position: relative;
   font-size: 0;
-}
-
-.map__frame {
-  width: 100%;
+  height: 362px;
+  object-fit: cover;
+  overflow: hidden;
 
   @media @tablet {
     height: 400px;
   }
 }
 
+.map__image {
+  min-width: 100%;
+  height: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @media @tablet {
+    display: none;
+  }
+}
+
+.map__frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+
+  @media @tablet {
+    display: block;
+  }
+}
+
 .map__marker-box {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 47%;
+  left: 42%;
+
+  @media @tabletonly {
+    bottom: 37%;
+    left: 43%;
+  }
+
+  @media @desktop {
+    bottom: 41%;
+    left: 63%;
+  }
 }
 
 .map__marker {
+  width: 57px;
+  height: 53px;
+
   @media @tablet {
     width: 113px;
     height: 106px;

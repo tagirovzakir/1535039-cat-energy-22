@@ -94,11 +94,11 @@
   margin-right: calc(-@padding / 2);
   margin-left: calc(-@padding / 2);
   align-items: center;
-  transition: transform .3s;
+  transition: transform 0.3s;
   transform: translateX(0);
 
   &--after {
-  transform: translateX(calc(-100% - @padding));
+    transform: translateX(calc(-100% - @padding));
   }
 
   @media @tablet {
@@ -107,7 +107,7 @@
     transition: none;
 
     &--after {
-    transform: translateX(0);
+      transform: translateX(0);
     }
   }
 
@@ -134,7 +134,7 @@
 
   @media @tablet {
     position: absolute;
-    transition: opacity .3s;
+    transition: opacity 0.3s;
 
     &--hide {
       opacity: 0;
@@ -213,7 +213,7 @@
   height: 6px;
   background: #68b738;
   border-radius: 6px;
-  transition: transform .3s;
+  transition: transform 0.3s;
 
   &--after {
     transform: translateX(100%);
