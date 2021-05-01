@@ -10,6 +10,11 @@ function menuToggle() {
   toggle.addEventListener("click", function () {
     toggle.classList.toggle("page-header__toggle--close");
     menu.classList.toggle("site-menu--hide");
+    if (toggle.classList.contains("page-header__toggle--close")) {
+      toggle.ariaLabel = "закрыть меню"
+    } else {
+      toggle.ariaLabel = "открыть меню"
+    }
   });
   {passive: true};
 }
