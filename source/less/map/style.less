@@ -12,16 +12,21 @@
   }
 }
 
+.map__link {
+  display: block;
+  height: 100%;
+
+  @media @tablet {
+    display: none;
+  }
+}
+
 .map__image {
   min-width: 100%;
   height: auto;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-
-  @media @tablet {
-    display: none;
-  }
 }
 
 .map__frame {
@@ -35,9 +40,12 @@
 }
 
 .map__marker-box {
-  position: absolute;
-  bottom: 47%;
-  left: 42%;
+  display: none;
+
+  @media @tablet {
+    display: block;
+    position: absolute;
+  }
 
   @media @tabletonly {
     bottom: 37%;
