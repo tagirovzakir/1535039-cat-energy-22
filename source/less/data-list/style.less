@@ -48,10 +48,11 @@
 
 .data-list__item--weight,
 .data-list__item--time {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   display: flex;
   flex-direction: column;
-  padding-top: 14px;
+  padding-top: 15px;
+  min-height: 59px;
 
   @media @desktop {
     margin-bottom: 55px;
@@ -59,44 +60,38 @@
 }
 
 .data-list__index {
-  text-align: center;
-  font-family: "Arial", sans-serif;
-
   &--weight,
   &--time {
+    font-family: "Arial", sans-serif;
     align-self: center;
     width: 87px;
     background-color: #e6e6e6;
     position: relative;
     z-index: 10;
-    font-size: 8px;
+    font-size: 12px;
     line-height: 12px;
-    letter-spacing: 1px;
+    text-align: center;
+    text-transform: lowercase;
     color: #444444;
-  }
 
-  @media @tablet {
-    font-size: 10px;
-    line-height: 14px;
-    width: max-content;
-    background-color: #ffffff;
+    @media @tablet {
+      font-size: 14px;
+      line-height: 14px;
+      width: max-content;
+      background-color: #ffffff;
 
-    br {
-      display: none;
+      br {
+        display: none;
+      }
+    }
+
+    @media @desktop {
+      background-color: #f2f2f2;
     }
   }
 
-  @media @desktop {
-    &--weight,
-    &--time {
-      background-color: #e6e6e6;
-    }
-  }
 
   &--price {
-    font-family: "Oswaldregular", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 20px;
     background-color: transparent;
 
     @media @tabletonly {
@@ -104,7 +99,7 @@
     }
 
     @media @tablet {
-      font: inherit;
+      width: max-content;
     }
 
     @media @desktop {
@@ -114,16 +109,16 @@
 }
 
 .data-list__value {
-  text-align: center;
-  font-size: 24px;
-  line-height: 24px;
   margin: 0;
   box-sizing: border-box;
 
   &--weight,
   &--time {
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
     order: -1;
-    margin-bottom: 11px;
+    margin-bottom: 9px;
     width: 124px;
     position: relative;
 
@@ -146,18 +141,14 @@
     }
 
     @media @tablet {
+      font-size: 30px;
+      line-height: 37px;
       margin-bottom: 13px;
       width: 162px;
     }
   }
 
-  @media @tablet {
-    font-size: 30px;
-    line-height: 37px;
-  }
-
   &--price {
-    font: inherit;
     margin-left: 2px;
   }
 }

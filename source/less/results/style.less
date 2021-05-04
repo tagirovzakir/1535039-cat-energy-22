@@ -2,19 +2,20 @@
   padding: 27px 0 28px;
   background-color: #eaeaea;
   overflow: hidden;
+  min-height: 705px;
+  box-sizing: border-box;
 
   @media @tabletonly {
-    padding: 43px 0 64px;
+    padding: 42px 0 64px;
     border-top: 1px solid #e6e6e6;
-  }
-
-  @media @tablet {
     background-image: linear-gradient(to top, #eaeaea 462px, #ffffff 462px);
   }
 
   @media @desktop {
-    padding-bottom: 65px;
-    padding-top: 10px;
+    background-image: linear-gradient(to top, #f2f2f2 462px, #ffffff 462px);
+    padding-bottom: 63px;
+    padding-top: 11px;
+    min-height: 656px;
   }
 }
 
@@ -51,16 +52,17 @@
   @media @desktop {
     grid-area: t;
     margin-top: 58px;
-    margin-bottom: 148px;
+    margin-bottom: 146px;
   }
 }
 
 .results__text {
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 18px;
   margin: 0 0 25px;
   color: #444444;
+  min-height: 108px;
 
   @media @tablet {
     font-size: 16px;
@@ -69,17 +71,23 @@
 
   @media @tabletonly {
     margin-bottom: 56px;
+    min-height: 72px;
   }
 
   @media @desktop {
     grid-area: p;
     margin-bottom: 69px;
     max-width: 436px;
+    min-height: 96px;
   }
 }
 
 .results__data-list {
   margin: 0 0 42px;
+
+  @media @tabletonly {
+    margin-bottom: 60px;
+  }
 
   @media @desktop {
     grid-area: dl;
@@ -113,6 +121,7 @@
 
   @media @tabletonly {
     height: 525px;
+    margin-bottom: 5px;
   }
 
   @media @desktop {

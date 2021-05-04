@@ -5,6 +5,7 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  border-top: 1px solid #e6e6e6;
 
   &--hide {
     height: 0;
@@ -57,7 +58,6 @@
     &--current::after {
       content: "";
       position: absolute;
-      bottom: 2px;
       left: 50%;
       transform: translateX(-50%);
       width: 100%;
@@ -68,6 +68,10 @@
 
   @media @tabletonly {
     padding-bottom: 10px;
+
+    &--current::after {
+      bottom: 2px;
+    }
   }
 
   @media @desktop {

@@ -1,5 +1,4 @@
 .promo {
-  color: #ffffff;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -13,7 +12,6 @@
   }
 
   @media @tablet {
-    color: #000000;
     background: none;
   }
 }
@@ -34,11 +32,14 @@
 }
 
 .promo__wrapper {
-  padding-top: 28px;
+  padding-top: 27px;
   box-sizing: border-box;
   margin: 0 auto;
   overflow: hidden;
   width: 100%;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
 
   @media @tabletonly {
     display: grid;
@@ -47,6 +48,7 @@
     justify-items: start;
     align-items: start;
     padding-top: 64px;
+    min-height: 874px;
   }
 
   @media @desktop {
@@ -62,6 +64,7 @@
   line-height: 36px;
   text-align: center;
   font-weight: 400;
+  color: #ffffff;
   word-break: normal;
   max-width: 250px;
   overflow: hidden;
@@ -75,6 +78,7 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
+    color: #000000;
     word-break: normal;
     margin: 0;
   }
@@ -101,10 +105,11 @@
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
+  color: #ffffff;
   max-width: 250px;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 0 auto 29px;
+  margin: 0 auto auto;
   grid-row-start: 2;
   grid-column-start: 1;
 
@@ -112,6 +117,7 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
+    color: #000000;
     margin: 0;
     max-width: none;
   }
@@ -147,6 +153,10 @@
   margin: 0 auto 3px;
   max-width: 100%;
 
+  @media @tablet {
+    margin: 0;
+  }
+
   @media @tabletonly {
     width: 100%;
     height: auto;
@@ -165,7 +175,7 @@
 .promo__link {
   font-size: 14px;
   line-height: 18px;
-  padding: 7px;
+  padding: 5px 7px 7px;
   grid-row-start: 3;
   grid-column-start: 1;
 
@@ -175,6 +185,7 @@
     padding: 14px 26px;
     min-height: 54px;
     width: max-content;
+    min-width: 244px;
   }
 
   @media @tabletonly {

@@ -34,7 +34,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 0 0 @padding;
-  border-bottom: 1px solid #e6e6e6;
 
   @media @tablet {
     border: none;
@@ -46,7 +45,8 @@
   font-size: 0;
   transition: opacity 0.1s;
   margin-top: 11px;
-  margin-bottom: 17px;
+  margin-bottom: 15px;
+  margin-right: 55px;
 
   &[href] {
     &:hover,
@@ -96,6 +96,7 @@
 .page-header__logo-2 {
   width: 101px;
   height: 18px;
+  margin-right: auto;
 
   &[href] {
     &:hover,
@@ -116,7 +117,7 @@
 .page-header__toggle {
   width: 64px;
   height: 66px;
-  padding: 32px 20px;
+  padding: 31px 20px 32px;
   border: none;
   background-color: #000000;
   box-sizing: border-box;
@@ -132,8 +133,9 @@
     content: "";
     width: 24px;
     height: 2px;
-    background-color: #000000;
+    background: #000000;
     position: absolute;
+    transform: translateY(0);
     transition: transform 0.2s;
   }
 
@@ -152,10 +154,11 @@
   }
 
   &--close {
-    background-color: transparent;
+    background: transparent;
+    height: 65px;
 
     &::before {
-      transform: translateY(7px) rotate(45deg);
+      transform: translateY(6.5px) rotate(45deg);
     }
 
     &::after {
@@ -170,12 +173,7 @@
 
   &:active {
     border: none;
-    outline: none;
     opacity: 0.3;
-
-    &::after {
-      box-shadow: none;
-    }
   }
 }
 
